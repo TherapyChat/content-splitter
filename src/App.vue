@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <mq-layout mq="sm">
-      <main class="content-splitter mobile">
+      <main
+        class="content-splitter mobile">
         <article
           class="mobile__article"
           v-for="item in items"
@@ -15,7 +16,8 @@
       </main>
     </mq-layout>
     <mq-layout mq="md+">
-      <main class="content-splitter desktop">
+      <main
+        class="content-splitter desktop">
         <nav class="desktop__menu">
           <ul class="menu" role="menu">
             <li 
@@ -62,11 +64,22 @@
 
 <script>
 
+import VueMq from 'vue-mq'
+import Vue from 'vue'
+
+Vue.use(VueMq, {
+  breakpoints: { // default breakpoints - customize this
+    sm: 800,
+    md: 1250
+  }
+})
+
 export default {
   name: 'app',
-  data () {
-    return {
-      items: [
+  props: {
+    items: {
+      type: Array,
+      default: () => [
         {
           'id': 1,
           'title': '¿En qué consiste la ansiedad?',
@@ -91,14 +104,17 @@ export default {
           'headerPreloadImg': '',
           'contentText': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
         }
-      ],
+      ]
+    }
+  },
+  data () {
+    return {
       articles: [],
       activeIndex: 0
     }
   },
   mounted: function () {
     this.setArticles()
-    this.addActiveClass(this.activeIndex)
   },
   watch: {
     $mq: function () {
@@ -132,8 +148,11 @@ export default {
 }
 </script>
 
-<style>
-:root {
+<style
+>
+/* Replace :host with :root in develop mode */
+
+:host {
   /* COLORS */
   --white-color: #FFF;
   --lightgrey-color: rgb(47,44,133, 0.3); /* #2f2c85; */
@@ -329,6 +348,8 @@ export default {
     .desktop__header img {
       width: var(--header-img-width);
       height: var(--header-img-height);
+      max-width: var(--header-img-width);
+      max-height: var(--header-img-height);
       flex: 1 0 auto;
       margin-right: 20px;
     }
