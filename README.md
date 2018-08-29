@@ -35,7 +35,7 @@ It has two versions, a desktop version available for widths larger than 800px th
 ## Installation
 
 ```bash
-bower install -save therapychat-feeling-better
+npm install -save content-splitter
 ```
 
 ## License
