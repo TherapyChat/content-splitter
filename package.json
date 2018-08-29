@@ -1,6 +1,6 @@
 {
   "name": "@therapychat/content-splitter",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "authors": [
     "TherapyChat.com team",
     "Alberto Fernández <alberto.fernandez@nc43tech.com>",
@@ -11,7 +11,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target wc --name content-splitter",
     "lint": "vue-cli-service lint",
-    "preversion": "changelog-version && git add CHANGELOG.md"
+    "version": "changelog-version && git add CHANGELOG.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TherapyChat/content-splitter.git"
   },
   "devDependencies": {
     "vue": "^2.5.17",
