@@ -82,27 +82,19 @@ export default {
       default: () => [
         {
           'id': 1,
-          'title': '¿En qué consiste la ansiedad?',
-          'headerText': 'La ansiedad es la excesiva preocupación por los peligros del futuro de una forma continuada en el tiempo y sin función adaptativa.',
-          'headerImg': 'ansiedad',
-          'headerPreloadImg': 'ansiedad',
-          'contentText': 'El estrés se produce cuando el organismo siente la necesidad de prepararse de antemano a los retos que vienen. Cuando se produce en el momento apropiado, es un componente positivo ya que nos puede ayudar a superarlos, por eso un cierto grado de ansiedad es razonable. El problema aparece cuando la ansiedad es desproporcionada, dificultando las actividades normales de la persona y provocando un deterioro del funcionamiento psicosocial y fisiológico.'
+          'title': 'Lorem ipsum dolor sit amet',
+          'headerText': 'Lorem ipsum dolor sit amet consectetuer adipiscing elit.',
+          'headerImg': 'logo',
+          'headerPreloadImg': 'logo',
+          'contentText': 'Lorem ipsum dolor sit amet consectetuer adipiscing elit. Vehicula orci odio taciti porta scelerisque aliquet metus cras ve rutrum mus donec mauris hendrerit. Hac curabitur dis tempor vel semper ve nullam dictumst. Dictum blandit sapien ornare condimentum odio taciti in posuere. Potenti magnis vestibulum ullamcorper ligula at blandit justo parturient luctus montes viverra lorem volutpat laoreet iaculis nulla.'
         },
         {
           'id': 2,
-          'title': '¿Qué situaciones generan ansiedad?',
-          'headerText': 'Cambios vitales significativos como un despido laboral, un embarazo, una mudanza, situaciones que sin llegar a ser traumáticas pueden producir ansiedad.',
+          'title': 'Sed ipsum nulla nullam',
+          'headerText': 'Sed ipsum nulla nullam mollis morbi ut magnis magna aliquet nam vel ornare viverra aliquam magna sollicitudin.',
           'headerImg': 'logo',
           'headerPreloadImg': 'logo',
-          'contentText': '<p>Hechos traumáticos, como puede ser un accidente de tráfico, una violación, un atentado o un incendio. Es lo que se conoce como trastorno de estrés postraumático y puede llegar a permanecer durante meses o años.</p><p>Causas genéticas ya que existe una variante genética que se considera factor de predisposición.</p><p>El consumo de sustancias estupefacientes, o incluso para algunas personas, el consumo de cafeína o teína.</p>'
-        },
-        {
-          'id': 3,
-          'title': 'Sed ut perspiciatis unde omnis',
-          'headerText': 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.',
-          'headerImg': '',
-          'headerPreloadImg': '',
-          'contentText': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+          'contentText': '<p>Sed ipsum nulla nullam mollis morbi ut magnis magna aliquet nam vel ornare viverra aliquam magna sollicitudin. Praesent risus vulputate praesent id risus ve malesuada fusce id magnis. Habitant mi mus. Nisi faucibus morbi sodales facilisi blandit. Erat nam hymenaeos a diam facilisis semper.</p><p>Pellentesque egestas elementum commodo lobortis rhoncus venenatis? Vitae nec a iaculis urna euismod porta fusce pede est. Risus platea viverra lacus rhoncus odio erat mattis scelerisque ante metus pretium felis.</p>'
         }
       ]
     }
@@ -185,6 +177,7 @@ export default {
   /* MARGINS */
   --left-margin: 127px;
   --top-margin: 67px;
+  --mobile-margin: 12px;
 
   /* FONT-FACES */
   @font-face {
@@ -223,10 +216,12 @@ export default {
 
 /* MOBILE */
 .mobile {
-  width: var(--mobile-width);
+  width: auto;
   height: var(--mobile-height);
   display: block;
-  padding: 30px 13px;
+  margin-right: var(--mobile-margin);
+  margin-left: var(--mobile-margin);
+  padding: 30px 12px;
 }
 
   .mobile__header,
