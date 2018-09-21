@@ -95,6 +95,14 @@ export default {
           'headerImg': 'logo',
           'headerPreloadImg': 'logo',
           'contentText': '<p>Sed ipsum nulla nullam mollis morbi ut magnis magna aliquet nam vel ornare viverra aliquam magna sollicitudin. Praesent risus vulputate praesent id risus ve malesuada fusce id magnis. Habitant mi mus. Nisi faucibus morbi sodales facilisi blandit. Erat nam hymenaeos a diam facilisis semper.</p><p>Pellentesque egestas elementum commodo lobortis rhoncus venenatis? Vitae nec a iaculis urna euismod porta fusce pede est. Risus platea viverra lacus rhoncus odio erat mattis scelerisque ante metus pretium felis.</p>'
+        },
+        {
+          'id': 3,
+          'title': 'Temporibus autem quibusdam et aut officiis debitis',
+          'headerText': 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.',
+          'headerImg': 'logo',
+          'headerPreloadImg': 'logo',
+          'contentText': '<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>'
         }
       ]
     }
@@ -357,5 +365,10 @@ export default {
     line-height: 1.32;
     font-size: var(--nineteen-px-font);
     font-family: 'Circular-Light', Helvetica, Arial, sans-serif;
+    overflow: auto;
   }
+
+    .desktop__content p {
+      margin-top: 0;
+    }
 </style>
